@@ -7,7 +7,7 @@ public class PrintNumbers {
     }
     public static void main(String[] args) {
         System.out.println("Result : ");
-        int n = 0;
+        int n = 10;
         printNos(n);
         
     }
