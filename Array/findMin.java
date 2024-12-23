@@ -1,5 +1,3 @@
-package Array;
-
 import java.util.*;
 
 public class findMin {
@@ -9,7 +7,6 @@ public class findMin {
         System.out.println(min(arr));
 
     }
-
     // assume arr.length != 0
     static int min(int[] arr) {
         int ans = 0;
