@@ -3,7 +3,7 @@ public class PrintGfg {
         if(n == 0) return;
 
         printGfg(n-1);
-        System.out.print("Rizu" + " ");
+        System.out.print("GFG" + " ");
     }
     public static void main(String[] args) {
         System.out.println("Rresult : ");
