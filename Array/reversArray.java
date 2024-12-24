@@ -15,7 +15,10 @@ public class reversArray {
         int[] arr = {1, 4, 3, 2, 6, 5};
         reversArray reverse = new reversArray();
         reverse.reverseArray(arr);
-        System.out.println(Arrays.toString(arr));
+        // System.out.println(Arrays.toString(arr));
+        for(int i = 0; i < arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
     }
     
 }
