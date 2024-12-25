@@ -11,12 +11,12 @@ public class fibonacci {
     }
     public static void main(String[] args) {
         //  fibonacci series 
+        // System.out.println("Result : ");
         // for(int i = 0; i <= 10; i++){
-        //     System.out.println(fib(i));
+        //     System.out.print(fib(i) + " ");
         // }
-
         // Nth term of fibonacci
-        System.out.println(fib(4));
+        System.out.println("Result is : " + fib(4));
     }
     
 }

@@ -2,7 +2,7 @@ import java.util.*;
 public class toggleAllCharacters {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        StringBuilder str = new StringBuilder(sc.nextLine());
+        StringBuilder str = new StringBuilder(sc.nextInt());
         System.out.println(str);
         // toggle -> capital letter to small and small letter to capital
         for(int i = 0; i < str.length(); i++){
