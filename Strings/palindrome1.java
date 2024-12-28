@@ -2,8 +2,7 @@ public class palindrome1 {
     public static boolean isPalindrome(String s) {
         if(s.length() == 0) return true;
 
-        // s = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
-        
+        s = s.toLowerCase().replaceAll("[^A-Za-z0-9]", "");
         int st = 0, end = s.length()-1;
         while (st<end) {
             if(s.charAt(st) != s.charAt(end)){
@@ -13,7 +12,6 @@ public class palindrome1 {
             end--;
         }
         return true;
-        
     }
         public static void main(String[] args) {
         // String s = "abcdcgba";
@@ -32,8 +30,8 @@ public class palindrome1 {
 
         String s = "A man, a plan, a canal: Panama";
 
-        System.out.println(s.toLowerCase());
-        // System.out.println("Result : " + isPalindrome(s));
+        // System.out.println(s.toLowerCase());
+        System.out.println("Result : " + isPalindrome(s));
     }
     
 }
