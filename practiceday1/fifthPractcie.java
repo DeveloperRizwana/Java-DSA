@@ -1,19 +1,24 @@
 public class fifthPractcie {
-    public static boolean check(int[] nums) {
-        int break_count = 0;
-        for(int i = 0; i<nums.length-1; i++){
-            if(nums[i] > nums[i+1]){
-                break_count++;
+    public static int removeDuplicates(int[] nums) {
+        if (nums.length == 0) return 0;
+        int k = 1;
+        int previousNum = nums[0];
+        for(int i = 1; i < nums.length; i++){
+            if(previousNum != nums[i]){
+                previousNum = nums[i];
+                nums[k++] = nums[i];
             }
         }
-        if(nums[nums.length-1] > nums[0]){
-            break_count++;
-        }
-        return break_count <= 1;
+        return k;
     }
-    public static void main(String[] args) {
-        int[] nums   = {3,4,5,1,2};
-        System.out.println(check(nums));
-    }
+       public static void main(String[] args) {
+        int[] nums   = {1,1,2};
+        int result = removeDuplicates(nums);
+        System.out.println("Number of unique elements: " + result);
 
-}
+        // Print the unique elements
+        for (int i = 0; i < result; i++) {
+            System.out.print(nums[i] + " ");
+        }
+    }
+    }
