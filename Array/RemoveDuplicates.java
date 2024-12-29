@@ -6,7 +6,8 @@ public class RemoveDuplicates {
         for(int i = 1; i < nums.length; i++){
             if(previousNum != nums[i]){
                 previousNum = nums[i];
-                nums[k++] = nums[i];
+                k++;
+                // nums[k++] = nums[i];
             }
         }
         return k;
