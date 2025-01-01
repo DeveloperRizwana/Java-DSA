@@ -4,7 +4,7 @@ public class findMissingNumber {
         for(int i = 0; i < a.length; i++){
             if(a[i] == k){
                 k++;
-                i = -1;
+                i = 0;      
             } 
         }
         return k;
