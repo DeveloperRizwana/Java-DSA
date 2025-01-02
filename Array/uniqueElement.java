@@ -1,22 +1,40 @@
 import java.util.*;
 public class uniqueElement {
-    static int findUniqueElement(int[] arr) {
-        int n = arr.length;
+    static int findUniqueElement(int[] nums) {
+        int n = nums.length;
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
-                if (arr[i] == arr[j]) {
-                    arr[i] = -1;
-                    arr[j] = -1;
+                if (nums[i] == nums[j]) {
+                    nums[i] = -1;
+                    nums[j] = -1;
                 }
             }
         }
         int ans = -1;
         for (int i = 0; i < n; i++) {
-            if (arr[i] > 0) {
-                ans = arr[i];
+            if (nums[i] > 0) {
+                ans = nums[i];
             }
         }
         return ans;
+
+        // int n = nums.length;
+        // int[] result = new int[n];
+        // for(int i = 0; i < n; i++){
+        //     int count = 0; 
+        //     for(int j =0 ; j < n; j++){
+        //         if(nums[i] == nums[j]){
+        //             count++;
+        //         }
+        //     }
+        //     result[i] = count;
+        // }
+        // for(int i = 0; i < n; i++){
+        //     if(result[i] == 1){
+        //         return nums[i];
+        //     }
+        // }
+        // return -1;
 
     }
 

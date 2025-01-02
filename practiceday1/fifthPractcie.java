@@ -1,16 +1,26 @@
 public class fifthPractcie {
-    public static int missingNumber(int[] a){
-        int k = 0;
-        for(int i = 0; i < a.length; i++){
-            if(a[i] == k){
-                k++;
-                i = -1;
-            } 
+    public static int singleNumber(int[] nums) {
+        int n = nums.length;
+        int[] result = new int[n];
+        for(int i = 0; i < n; i++){
+            int count = 0; 
+            for(int j =0 ; j < n; j++){
+                if(nums[i] == nums[j]){
+                    count++;
+                }
+            }
+            result[i] = count;
         }
-        return k;
+        for(int i = 0; i < n; i++){
+            if(result[i] == 1){
+                return nums[i];
+            }
+        }
+        return -1;
+        
     }
     public static void main(String[] args) {
-        int[] nums = {9,6,4,2,3,5,7,0,1};
-        System.out.println(missingNumber(nums));
+        int[] nums = {4,1,2,1,2};
+        System.out.println(singleNumber(nums));
     }
 }
