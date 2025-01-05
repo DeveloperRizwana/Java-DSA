@@ -32,15 +32,16 @@ public class sorted012 {
    
     }
     public static void main(String[] args) {
-        System.out.println("Enter size of array: ");
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[] arr = new int[n];
+        // System.out.println("Enter size of array: ");
+        // Scanner sc = new Scanner(System.in);
+        // int n = sc.nextInt();
+        // int[] arr = new int[n];
 
-        System.out.println("Enter " + n + " elements : ");
-        for(int i = 0; i< arr.length; i++){
-            arr[i] = sc.nextInt();
-        }
+        // System.out.println("Enter " + n + " elements : ");
+        // for(int i = 0; i< arr.length; i++){
+        //     arr[i] = sc.nextInt();
+        // }
+        int[] arr = {1,0,1};
         System.out.println("Original Array: ");
         printArray(arr);
 
