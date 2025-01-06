@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class longestSubarray {
     public static int lenOfLongestSubarr(int[] arr, int k) {
         int n = arr.length;
