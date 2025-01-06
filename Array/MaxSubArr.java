@@ -3,7 +3,7 @@ public class MaxSubArr {
         int n = nums.length;
         int maxSum = nums[0];
         int sum = nums[0];
-        for(int i = 1; i < n; i++){
+        for(int i = 0; i < n; i++){
             sum = Math.max(nums[i], sum+nums[i]);
             maxSum = Math.max(maxSum, sum);
         }
