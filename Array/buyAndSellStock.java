@@ -1,7 +1,6 @@
 public class buyAndSellStock {
     public static int maxProfit(int[] prices) {
         int buy = Integer.MAX_VALUE;
-        int sell = Integer.MIN_VALUE;
         int profit = 0;
         for (int i = 0; i < prices.length; i++) {
             buy = Math.min(buy, prices[i]);
