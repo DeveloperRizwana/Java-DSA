@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "smallestLargestElement",
+      "request": "launch",
+      "mainClass": "smallestLargestElement",
+      "projectName": "Array_7e81356e"
+    },
+    {
+      "type": "java",
       "name": "swapWithoutTemp",
       "request": "launch",
       "mainClass": "swapWithoutTemp",
