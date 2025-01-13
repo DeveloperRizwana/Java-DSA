@@ -35,8 +35,8 @@ public class NextPermutation {
         reverse(nums, idx + 1, n - 1);
     }
     public static void main(String[] args) {
-        int[] arr = {1,2,3};
+        int[] arr = {1,2,3,4,5};
         findNextPermutation(arr);
-         System.out.println(Arrays.toString(arr));
+        System.out.println("Next permutaion is : " + Arrays.toString(arr));
     }
 }

@@ -1,427 +1,455 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "sumOftwoArrays",
-            "request": "launch",
-            "mainClass": "sumOftwoArrays",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "arrayrotateCheck",
-            "request": "launch",
-            "mainClass": "arrayrotateCheck",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Array3",
-            "request": "launch",
-            "mainClass": "Array3",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "Main",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "arrange",
-            "request": "launch",
-            "mainClass": "arrange",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "array1",
-            "request": "launch",
-            "mainClass": "array1",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "arrayList",
-            "request": "launch",
-            "mainClass": "arrayList",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "colNoFixed",
-            "request": "launch",
-            "mainClass": "colNoFixed",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "countX",
-            "request": "launch",
-            "mainClass": "countX",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "duplicateElement",
-            "request": "launch",
-            "mainClass": "duplicateElement",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "equalSumPartition",
-            "request": "launch",
-            "mainClass": "equalSumPartition",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "evenDigits",
-            "request": "launch",
-            "mainClass": "evenDigits",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "findMin",
-            "request": "launch",
-            "mainClass": "findMin",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "frequencyArray",
-            "request": "launch",
-            "mainClass": "frequencyArray",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "generateSpiral",
-            "request": "launch",
-            "mainClass": "generateSpiral",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "inPlaceTranspose",
-            "request": "launch",
-            "mainClass": "inPlaceTranspose",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "interSectionOf2Array",
-            "request": "launch",
-            "mainClass": "interSectionOf2Array",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "isSorted",
-            "request": "launch",
-            "mainClass": "isSorted",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "lastOcuurance",
-            "request": "launch",
-            "mainClass": "lastOcuurance",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "linearSearch",
-            "request": "launch",
-            "mainClass": "linearSearch",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "matrixMultiplication",
-            "request": "launch",
-            "mainClass": "matrixMultiplication",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "matrixSum",
-            "request": "launch",
-            "mainClass": "matrixSum",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "max",
-            "request": "launch",
-            "mainClass": "max",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "maxWealth",
-            "request": "launch",
-            "mainClass": "maxWealth",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "multiDimension",
-            "request": "launch",
-            "mainClass": "multiDimension",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "multiDimensional",
-            "request": "launch",
-            "mainClass": "multiDimensional",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "pairSum",
-            "request": "launch",
-            "mainClass": "pairSum",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "pascaltriangle",
-            "request": "launch",
-            "mainClass": "pascaltriangle",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "passingInFunction",
-            "request": "launch",
-            "mainClass": "passingInFunction",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "practiceclass",
-            "request": "launch",
-            "mainClass": "practiceclass",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "practiceclass2",
-            "request": "launch",
-            "mainClass": "practiceclass2",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "prefixSum",
-            "request": "launch",
-            "mainClass": "prefixSum",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "pushZerosAtEnd",
-            "request": "launch",
-            "mainClass": "pushZerosAtEnd",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "rangeQuery",
-            "request": "launch",
-            "mainClass": "rangeQuery",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "rectangleSum",
-            "request": "launch",
-            "mainClass": "rectangleSum",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "rectangleSum2",
-            "request": "launch",
-            "mainClass": "rectangleSum2",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "repeatingNumber",
-            "request": "launch",
-            "mainClass": "repeatingNumber",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "reverse",
-            "request": "launch",
-            "mainClass": "reverse",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "rotateArray",
-            "request": "launch",
-            "mainClass": "rotateArray",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "rotateByDElementLeft",
-            "request": "launch",
-            "mainClass": "rotateByDElementLeft",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "rotateInPlace",
-            "request": "launch",
-            "mainClass": "rotateInPlace",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "rotationOfMatrix",
-            "request": "launch",
-            "mainClass": "rotationOfMatrix",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "searchIn2dArray",
-            "request": "launch",
-            "mainClass": "searchIn2dArray",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "searchInRange",
-            "request": "launch",
-            "mainClass": "searchInRange",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "searchInString",
-            "request": "launch",
-            "mainClass": "searchInString",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "secondMax",
-            "request": "launch",
-            "mainClass": "secondMax",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "smallestLargestElement",
-            "request": "launch",
-            "mainClass": "smallestLargestElement",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "sortArrayByParity",
-            "request": "launch",
-            "mainClass": "sortArrayByParity",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "sortSquares",
-            "request": "launch",
-            "mainClass": "sortSquares",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "sorted012",
-            "request": "launch",
-            "mainClass": "sorted012",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "sortedArray",
-            "request": "launch",
-            "mainClass": "sortedArray",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "spiralOrder",
-            "request": "launch",
-            "mainClass": "spiralOrder",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "swap",
-            "request": "launch",
-            "mainClass": "swap",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "swap1",
-            "request": "launch",
-            "mainClass": "swap1",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "swapAlternate",
-            "request": "launch",
-            "mainClass": "swapAlternate",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "swapWithoutTemp",
-            "request": "launch",
-            "mainClass": "swapWithoutTemp",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "transposeOfMatrix",
-            "request": "launch",
-            "mainClass": "transposeOfMatrix",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "triplesSum",
-            "request": "launch",
-            "mainClass": "triplesSum",
-            "projectName": "Array_55837b6b"
-        },
-        {
-            "type": "java",
-            "name": "uniqueElement",
-            "request": "launch",
-            "mainClass": "uniqueElement",
-            "projectName": "Array_55837b6b"
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "swapWithoutTemp",
+      "request": "launch",
+      "mainClass": "swapWithoutTemp",
+      "projectName": "Array_7e81356e"
+    },
+    {
+      "type": "java",
+      "name": "swap",
+      "request": "launch",
+      "mainClass": "swap",
+      "projectName": "Array_7e81356e"
+    },
+    {
+      "type": "java",
+      "name": "alternateSwapping",
+      "request": "launch",
+      "mainClass": "alternateSwapping",
+      "projectName": "Array_7e81356e"
+    },
+    {
+      "type": "java",
+      "name": "NextPermutation",
+      "request": "launch",
+      "mainClass": "NextPermutation",
+      "projectName": "Array_7e81356e"
+    },
+    {
+      "type": "java",
+      "name": "sumOftwoArrays",
+      "request": "launch",
+      "mainClass": "sumOftwoArrays",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "arrayrotateCheck",
+      "request": "launch",
+      "mainClass": "arrayrotateCheck",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Array3",
+      "request": "launch",
+      "mainClass": "Array3",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "arrange",
+      "request": "launch",
+      "mainClass": "arrange",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "array1",
+      "request": "launch",
+      "mainClass": "array1",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "arrayList",
+      "request": "launch",
+      "mainClass": "arrayList",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "colNoFixed",
+      "request": "launch",
+      "mainClass": "colNoFixed",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "countX",
+      "request": "launch",
+      "mainClass": "countX",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "duplicateElement",
+      "request": "launch",
+      "mainClass": "duplicateElement",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "equalSumPartition",
+      "request": "launch",
+      "mainClass": "equalSumPartition",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "evenDigits",
+      "request": "launch",
+      "mainClass": "evenDigits",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "findMin",
+      "request": "launch",
+      "mainClass": "findMin",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "frequencyArray",
+      "request": "launch",
+      "mainClass": "frequencyArray",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "generateSpiral",
+      "request": "launch",
+      "mainClass": "generateSpiral",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "inPlaceTranspose",
+      "request": "launch",
+      "mainClass": "inPlaceTranspose",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "interSectionOf2Array",
+      "request": "launch",
+      "mainClass": "interSectionOf2Array",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "isSorted",
+      "request": "launch",
+      "mainClass": "isSorted",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "lastOcuurance",
+      "request": "launch",
+      "mainClass": "lastOcuurance",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "linearSearch",
+      "request": "launch",
+      "mainClass": "linearSearch",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "matrixMultiplication",
+      "request": "launch",
+      "mainClass": "matrixMultiplication",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "matrixSum",
+      "request": "launch",
+      "mainClass": "matrixSum",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "max",
+      "request": "launch",
+      "mainClass": "max",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "maxWealth",
+      "request": "launch",
+      "mainClass": "maxWealth",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "multiDimension",
+      "request": "launch",
+      "mainClass": "multiDimension",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "multiDimensional",
+      "request": "launch",
+      "mainClass": "multiDimensional",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "pairSum",
+      "request": "launch",
+      "mainClass": "pairSum",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "pascaltriangle",
+      "request": "launch",
+      "mainClass": "pascaltriangle",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "passingInFunction",
+      "request": "launch",
+      "mainClass": "passingInFunction",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "practiceclass",
+      "request": "launch",
+      "mainClass": "practiceclass",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "practiceclass2",
+      "request": "launch",
+      "mainClass": "practiceclass2",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "prefixSum",
+      "request": "launch",
+      "mainClass": "prefixSum",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "pushZerosAtEnd",
+      "request": "launch",
+      "mainClass": "pushZerosAtEnd",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "rangeQuery",
+      "request": "launch",
+      "mainClass": "rangeQuery",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "rectangleSum",
+      "request": "launch",
+      "mainClass": "rectangleSum",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "rectangleSum2",
+      "request": "launch",
+      "mainClass": "rectangleSum2",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "repeatingNumber",
+      "request": "launch",
+      "mainClass": "repeatingNumber",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "reverse",
+      "request": "launch",
+      "mainClass": "reverse",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "rotateArray",
+      "request": "launch",
+      "mainClass": "rotateArray",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "rotateByDElementLeft",
+      "request": "launch",
+      "mainClass": "rotateByDElementLeft",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "rotateInPlace",
+      "request": "launch",
+      "mainClass": "rotateInPlace",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "rotationOfMatrix",
+      "request": "launch",
+      "mainClass": "rotationOfMatrix",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "searchIn2dArray",
+      "request": "launch",
+      "mainClass": "searchIn2dArray",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "searchInRange",
+      "request": "launch",
+      "mainClass": "searchInRange",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "searchInString",
+      "request": "launch",
+      "mainClass": "searchInString",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "secondMax",
+      "request": "launch",
+      "mainClass": "secondMax",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "smallestLargestElement",
+      "request": "launch",
+      "mainClass": "smallestLargestElement",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "sortArrayByParity",
+      "request": "launch",
+      "mainClass": "sortArrayByParity",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "sortSquares",
+      "request": "launch",
+      "mainClass": "sortSquares",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "sorted012",
+      "request": "launch",
+      "mainClass": "sorted012",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "sortedArray",
+      "request": "launch",
+      "mainClass": "sortedArray",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "spiralOrder",
+      "request": "launch",
+      "mainClass": "spiralOrder",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "swap",
+      "request": "launch",
+      "mainClass": "swap",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "swap1",
+      "request": "launch",
+      "mainClass": "swap1",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "swapAlternate",
+      "request": "launch",
+      "mainClass": "swapAlternate",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "swapWithoutTemp",
+      "request": "launch",
+      "mainClass": "swapWithoutTemp",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "transposeOfMatrix",
+      "request": "launch",
+      "mainClass": "transposeOfMatrix",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "triplesSum",
+      "request": "launch",
+      "mainClass": "triplesSum",
+      "projectName": "Array_55837b6b"
+    },
+    {
+      "type": "java",
+      "name": "uniqueElement",
+      "request": "launch",
+      "mainClass": "uniqueElement",
+      "projectName": "Array_55837b6b"
+    }
+  ]
 }
