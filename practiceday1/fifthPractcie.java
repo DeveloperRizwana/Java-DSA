@@ -1,19 +1,18 @@
 public class fifthPractcie {
-    static int evenlyDivides(int n) {
-        int reversed = 0;
-        while (n != 0) {
-            int d = n % 10;
-            n = n / 10;
-            if (reversed > Integer.MAX_VALUE / 10 || reversed < Integer.MIN_VALUE / 10) {
-                // Prevent integer overflow
-                return 0;
+    public static int[] lcmAndGcd(int a, int b) {
+        int gcd = 0;
+        for(int i = b; i>=1; i--){
+            if(a%i==0 && b%i==0){
+                gcd = i;
+                break;
             }
-            reversed = reversed * 10 + d;
         }
-        return reversed;
+        int lcm = (a*b)/gcd;
+        return new int[]{lcm,gcd};
     }
     public static void main(String[] args) {
-       int n = -123;
-       System.out.println(evenlyDivides(n));
+       int a = 5, b = 10;
+       int[] result = lcmAndGcd(a, b);
+       System.out.println(result[0] + " " + result[1]);
     }
 }
