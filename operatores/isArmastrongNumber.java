@@ -2,6 +2,8 @@ package operatores;
 
 import java.util.Scanner;
 
+import Strings.length;
+
 public class isArmastrongNumber {
     static int countDig(int n) {
         int count = 0;
@@ -13,7 +15,8 @@ public class isArmastrongNumber {
     }
 
     public static boolean armstrongNumber(int n){
-        int numberOfDig = countDig(n);
+        int numberOfDig = String.valueOf(n).length();
+        // int numberOfDig = countDig(n);
         int sum = 0;
         int originalN = n;
         while (n > 0) {
