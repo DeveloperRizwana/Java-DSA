@@ -1,18 +1,32 @@
 public class fifthPractcie {
-    public static int[] lcmAndGcd(int a, int b) {
-        int gcd = 0;
-        for(int i = b; i>=1; i--){
-            if(a%i==0 && b%i==0){
-                gcd = i;
-                break;
-            }
+    static int countDig(int n) {
+        int count = 0;
+        while (n > 0) {
+            n = n / 10;
+            count++;
         }
-        int lcm = (a*b)/gcd;
-        return new int[]{lcm,gcd};
+        return count;
     }
+
+    static boolean isArmstrong(int n) {
+        int originalN = n;
+        int numberOFDig = countDig(originalN);
+        int sum = 0;
+        while (n > 0) {
+            int lastDig = n % 10;
+            n = n / 10;
+            double pow = Math.pow(lastDig, numberOFDig);
+            sum += pow;
+        }
+        if (originalN == sum) {
+            return true;
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
-       int a = 5, b = 10;
-       int[] result = lcmAndGcd(a, b);
-       System.out.println(result[0] + " " + result[1]);
+        int a = 1234;
+        System.out.println("Answer is : " + isArmstrong(a));
+        System.out.println(countDig(a));
     }
 }

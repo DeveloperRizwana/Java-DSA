@@ -3,15 +3,24 @@ package operatores;
 import java.util.Scanner;
 
 public class isArmastrongNumber {
-   
+    static int countDig(int n) {
+        int count = 0;
+        while (n > 0) {
+            n = n / 10;
+            count++;
+        }
+        return count;
+    }
+
     public static boolean armstrongNumber(int n){
+        int numberOfDig = countDig(n);
         int sum = 0;
         int originalN = n;
         while (n > 0) {
             int lastDigit = n % 10;
             n = n/10;
-            int cube = lastDigit*lastDigit*lastDigit;
-            sum += cube;
+            double pow = Math.pow(lastDigit, numberOfDig);
+            sum += pow;
         }
     //    return originalN == sum;
         if (originalN == sum) {
@@ -25,12 +34,12 @@ public class isArmastrongNumber {
         System.out.println("Enter n : ");
         int n = sc.nextInt();
         boolean result = armstrongNumber(n);
-        // if(result){
-        //     System.out.println(n + " is an Armstrong number");
-        // } else{
-        //     System.out.println(n + " is not an Armstrong number");
+        if(result){
+            System.out.println(n + " is an Armstrong number");
+        } else{
+            System.out.println(n + " is not an Armstrong number");
             
-        // }
-        System.out.println(result);
+        }
+        // System.out.println(result);
     }
 }
