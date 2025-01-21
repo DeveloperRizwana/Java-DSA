@@ -1,32 +1,18 @@
 public class fifthPractcie {
     static int countDig(int n) {
-        int count = 0;
-        while (n > 0) {
-            n = n / 10;
-            count++;
-        }
-        return count;
-    }
-
-    static boolean isArmstrong(int n) {
-        int originalN = n;
-        int numberOFDig = countDig(originalN);
         int sum = 0;
-        while (n > 0) {
-            int lastDig = n % 10;
-            n = n / 10;
-            double pow = Math.pow(lastDig, numberOFDig);
-            sum += pow;
+        for(int i = 1; i <= n; i++) {
+           for(int j = 1; j<=n; j++){
+            if(i%j == 0){
+                sum += j;
+            }
+           }
         }
-        if (originalN == sum) {
-            return true;
-        }
-        return false;
+        return sum;
     }
-
+    
     public static void main(String[] args) {
-        int a = 1234;
-        System.out.println("Answer is : " + isArmstrong(a));
-        System.out.println(countDig(a));
+        int a = 4;
+        System.out.println("Answer is : " +countDig(a));
     }
 }
