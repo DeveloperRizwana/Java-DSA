@@ -1,11 +1,21 @@
+import java.util.ArrayList;
+
 public class fifthPractcie {
-    public static int sumOfSeries(int n) {
-      if(n == 1) return 1;
-      return sumOfSeries(n-1) + n*n*n;
+  static ArrayList<Long> factorialNumbers(long n) {
+    ArrayList<Long> result = new ArrayList<>();
+    long ans = 1;
+    long i = 1;
+    while(ans <= n){
+        result.add(ans);
+        i++;
+        ans *= i;
     }
-    public static void main(String[] args) {
-        int n = 5;
-        System.out.println("Answer:");
-        System.out.println(sumOfSeries(n));
-    }
+    return result;
+  }
+  public static void main(String[] args) {
+      long n = 9;
+      System.out.println("Answer:");
+      ArrayList<Long> result = factorialNumbers(n);
+      System.out.println(result);
+  }
 }
