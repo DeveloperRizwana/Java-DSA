@@ -1,21 +1,22 @@
-import java.util.ArrayList;
-
 public class fifthPractcie {
-  static ArrayList<Long> factorialNumbers(long n) {
-    ArrayList<Long> result = new ArrayList<>();
-    long ans = 1;
-    long i = 1;
-    while(ans <= n){
-        result.add(ans);
-        i++;
-        ans *= i;
+  static void swap(int[] arr, int i, int j){
+    int temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+  }
+  public static void reverseArray(int arr[]) {
+    int n = arr.length, st = 0, end = n-1;
+    while (st<end) {
+      swap(arr,st,end);
+      st++;
+      end--;
     }
-    return result;
   }
   public static void main(String[] args) {
-      long n = 9;
-      System.out.println("Answer:");
-      ArrayList<Long> result = factorialNumbers(n);
-      System.out.println(result);
+      int[] a = {4, 5, 2};
+      reverseArray(a);
+      for(int i = 0; i<a.length; i++){
+        System.out.print(a[i] + " ");
+      }
   }
 }
