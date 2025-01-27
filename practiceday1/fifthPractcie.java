@@ -1,22 +1,20 @@
 public class fifthPractcie {
-  static void swap(int[] arr, int i, int j){
-    int temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
-  }
-  public static void reverseArray(int arr[]) {
-    int n = arr.length, st = 0, end = n-1;
-    while (st<end) {
-      swap(arr,st,end);
+  public static boolean isPalindrome(String s) {
+    if(s.length() == 0) return true;
+    s = s.toLowerCase().replaceAll("[^a-z0-9]", "");
+    int st = 0, end = s.length()-1;
+    while(st < end){
+      if(s.charAt(st) != s.charAt(end)){
+        return false;
+      }
       st++;
       end--;
     }
+    return true;
+        
   }
   public static void main(String[] args) {
-      int[] a = {4, 5, 2};
-      reverseArray(a);
-      for(int i = 0; i<a.length; i++){
-        System.out.print(a[i] + " ");
-      }
+    String s = "race a car";
+    System.out.println(isPalindrome(s));
   }
 }
