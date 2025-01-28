@@ -1,20 +1,18 @@
 public class fifthPractcie {
-  public static boolean isPalindrome(String s) {
-    if(s.length() == 0) return true;
-    s = s.toLowerCase().replaceAll("[^a-z0-9]", "");
-    int st = 0, end = s.length()-1;
-    while(st < end){
-      if(s.charAt(st) != s.charAt(end)){
-        return false;
-      }
-      st++;
-      end--;
+  public static int fib(int n) {
+    if(n == 0 || n == 1) return n;
+    int a = 0, b = 1;
+    int ans = 0;
+    for (int i = 1; i < n; i++) {
+      System.out.println(a);
+       ans = a + b;
+      a = b;
+      b = ans;
     }
-    return true;
-        
+    return a;
   }
   public static void main(String[] args) {
-    String s = "race a car";
-    System.out.println(isPalindrome(s));
+    int n = 3;
+    System.out.println(fib(n));
   }
 }
