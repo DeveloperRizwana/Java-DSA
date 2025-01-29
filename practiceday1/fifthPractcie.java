@@ -1,18 +1,19 @@
 public class fifthPractcie {
-  public static int fib(int n) {
-    if(n == 0 || n == 1) return n;
-    int a = 0, b = 1;
-    int ans = 0;
-    for (int i = 1; i < n; i++) {
-      System.out.println(a);
-       ans = a + b;
-      a = b;
-      b = ans;
+  public static int largest(int arr[]) {
+    int max = -1;
+    int secondMax = -1;
+    for(int i = 0; i < arr.length; i++){
+      if(arr[i] > max){
+        secondMax = max;
+        max = arr[i];
+      } else if(arr[i] > secondMax && arr[i] < max){
+        secondMax = arr[i];
+      }
     }
-    return a;
+    return secondMax;
   }
   public static void main(String[] args) {
-    int n = 3;
-    System.out.println(fib(n));
+    int[] a = {10,5,10} ;
+    System.out.println(largest(a));
   }
 }
