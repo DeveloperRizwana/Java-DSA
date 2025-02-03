@@ -14,8 +14,9 @@ public class fifthPractcie {
   public static void main(String[] args) {
     int[] a = {0,0,1,1,1,2,2,3,3} ;
     int result = removeOccurances(a);
-    System.out.println(result);
+    System.out.println("number of occurances are : " + result);
 
+    System.out.println("Removed occurances : ");
     for(int i = 0; i < result; i++){
       System.out.print(a[i] + " ");
     }
