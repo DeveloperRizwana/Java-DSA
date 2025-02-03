@@ -1,23 +1,24 @@
 public class fifthPractcie {
-  public static int removeOccurances(int[] a){
-    int n = a.length;
-    int idx = a[0];
-    int x = 1;
-    for(int i = 1; i < n; i++){
-      if(idx != a[i]){
-        idx = a[i];
-        a[x++] = a[i];
-      }
+  public static void rotate(int[] nums, int k) {
+    int n = nums.length;
+    k = k % n;
+    reverse(nums, 0, n-1);
+    reverse(nums, 0, k-1);
+    reverse(nums, k, n-1);
+  }
+  public static void reverse(int[] nums, int i, int j){
+    while (i<j) {
+      int temp = nums[i];
+      nums[i] = nums[j];
+      nums[j] = temp;
+      i++;
+      j--;
     }
-    return x;
   }
   public static void main(String[] args) {
-    int[] a = {0,0,1,1,1,2,2,3,3} ;
-    int result = removeOccurances(a);
-    System.out.println("number of occurances are : " + result);
-
-    System.out.println("Removed occurances : ");
-    for(int i = 0; i < result; i++){
+    int[] a = {1,2,3,4,5,6,7};
+    rotate(a, 3);
+    for(int i = 0; i < a.length; i++){
       System.out.print(a[i] + " ");
     }
   }
