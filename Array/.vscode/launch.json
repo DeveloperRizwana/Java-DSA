@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "pushZerosAtEnd",
+      "request": "launch",
+      "mainClass": "pushZerosAtEnd",
+      "projectName": "Array_2738eee7"
+    },
+    {
+      "type": "java",
       "name": "rotatedSortedArrayCheck",
       "request": "launch",
       "mainClass": "rotatedSortedArrayCheck",
