@@ -1,41 +1,17 @@
-import java.util.ArrayList;
-
 public class fifthPractcie {
-  public static ArrayList<Integer> findUnion(int a[], int b[]) {
-    int n = a.length, m = b.length;
-    ArrayList<Integer> result = new ArrayList<>();
-    int i = 0, j = 0;
-    while(i<n && j<m){
-      if(a[i] <= b[j]){
-        if(result.size() == 0 || result.get(result.size() - 1)  != a[i]){
-          result.add(a[i]);
-        }
-        i++;
-      } else {
-        if(result.size() == 0 || result.get(result.size() - 1) != b[j]){
-          result.add(b[j]);
-        }
-        j++;
-      } 
-    }
-    while(i<n){
-      if(result.size() == 0 || result.get(result.size() - 1) != a[i]){
-        result.add(a[i]);
+  public static int missingNumber(int[] nums) {
+    int missingNum = 0;
+    for (int i = 0; i < nums.length; i++) {
+      if (nums[i] == missingNum) {
+        missingNum++;
+        i = -1;
       }
-      i++;
     }
-    while (j<m) {
-      if(result.size() == 0 || result.get(result.size() - 1)  != b[j]){
-        result.add(b[j]);
-      }
-      j++;
-    }
-    return result;
-    }
+    return missingNum;
+  }
+
   public static void main(String[] args) {
-    int[] a = {1,1,1,1,1};
-    int[] b = {2,2,2,2,2};
-    ArrayList<Integer> result = findUnion(a, b);
-    System.out.println(result);
+    int[] a = { 9,6,4,2,3,5,7,0,1};
+    System.out.println(missingNumber(a));
   }
 }
