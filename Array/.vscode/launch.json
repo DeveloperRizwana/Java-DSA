@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "uniqueElement",
+      "request": "launch",
+      "mainClass": "uniqueElement",
+      "projectName": "Array_2738eee7"
+    },
+    {
+      "type": "java",
       "name": "rotateByDElementLeft",
       "request": "launch",
       "mainClass": "rotateByDElementLeft",
