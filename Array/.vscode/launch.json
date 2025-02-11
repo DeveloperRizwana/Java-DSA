@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "longestSubarray",
+      "request": "launch",
+      "mainClass": "longestSubarray",
+      "projectName": "Array_2738eee7"
+    },
+    {
+      "type": "java",
       "name": "uniqueElement",
       "request": "launch",
       "mainClass": "uniqueElement",

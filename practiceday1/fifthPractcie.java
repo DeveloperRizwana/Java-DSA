@@ -13,7 +13,6 @@ public class fifthPractcie {
     }
     return maxLength;
   }
-
   public static void main(String[] args) {
     int[] a = { 94, -33, -13, 40, -82, 94, -33, -13, 40, -82
     };
