@@ -50,3 +50,15 @@ public class problem1 {
 }
 // create a hashmap using java Hashmap class to store the following
 // pairs(person,age) and display them
+
+/*
+ *** System.out.printf(" Age of %s is %d\n", key, mp.get(key));
+ * 1. System.out.printf(...) → This prints a formatted string (without
+ * automatically adding a new line unless specified).
+ * 
+ * 2. " Age of %s is %d\n" → This is the format string:
+ * 
+ * ->%s → Placeholder for a string (key).
+ * ->%d → Placeholder for an integer (mp.get(key)).
+ * ->\n → Newline character to move to the next line after printing.
+ */
