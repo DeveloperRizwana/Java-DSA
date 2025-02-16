@@ -1,25 +1,40 @@
+import java.util.HashMap;
+
 public class twoSum {
     public static int[] twoSum(int[] nums, int target) {
         int n = nums.length;
-        // int[] result = new int[2];
-        int sum = 0;
+        // // int[] result = new int[2];
+        // int sum = 0;
+        // for (int i = 0; i < n; i++) {
+        // for (int j = i + 1; j < n; j++) {
+        // sum = nums[i] + nums[j];
+        // if (sum == target) {
+        // // result[0] = i;
+        // // result[1] = j;
+        // return new int[]{i,j};
+        // }
+        // }
+        // }
+        // // return result;
+        // return new int[]{-1,-1};
+        HashMap<Integer, Integer> mp = new HashMap<>();
+        int[] ans = { -1 };
         for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
-                sum = nums[i] + nums[j];
-                if (sum == target) {
-                    // result[0] = i;
-                    // result[1] = j;
-                    return new int[]{i,j};
-                }
+            int partner = target - nums[i];
+            if (mp.containsKey(partner)) {
+                ans = new int[] { i, mp.get(partner) };
+                return ans;
             }
+            mp.put(nums[i], i);
         }
-        return  new int[]{-1,-1};
+        return ans;
     }
+
     public static void main(String[] args) {
-        int[] a = {3,2,4};
+        int[] a = { 3, 2, 4 };
         int[] result = twoSum(a, 6);
-        System.out.println(result[0]);
         System.out.println(result[1]);
+        System.out.println(result[0]);
     }
 
 }
