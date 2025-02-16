@@ -18,16 +18,14 @@ public class twoSum {
         // // return result;
         // return new int[]{-1,-1};
         HashMap<Integer, Integer> mp = new HashMap<>();
-        int[] ans = { -1 };
         for (int i = 0; i < n; i++) {
             int partner = target - nums[i];
             if (mp.containsKey(partner)) {
-                ans = new int[] { i, mp.get(partner) };
-                return ans;
+                return new int[] { mp.get(partner), i };
             }
             mp.put(nums[i], i);
         }
-        return ans;
+        return new int[] { -1, -1 };
     }
 
     public static void main(String[] args) {
@@ -35,7 +33,7 @@ public class twoSum {
         int[] result = twoSum(a, 6);
         // System.out.println(result[1]);
         // System.out.println(result[0]);
-        System.out.println(result[1] + "," + result[0]);
+        System.out.println("Indices : " + result[0] + "," + result[1]);
 
     }
 
