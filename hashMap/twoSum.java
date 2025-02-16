@@ -29,8 +29,8 @@ public class twoSum {
     }
 
     public static void main(String[] args) {
-        int[] a = { 3, 2, 4 };
-        int[] result = twoSum(a, 6);
+        int[] a = { 14,7,10,4,5,1,2,9};
+        int[] result = twoSum(a, 13);
         // System.out.println(result[1]);
         // System.out.println(result[0]);
         System.out.println("Indices : " + result[0] + "," + result[1]);
