@@ -33,8 +33,10 @@ public class twoSum {
     public static void main(String[] args) {
         int[] a = { 3, 2, 4 };
         int[] result = twoSum(a, 6);
-        System.out.println(result[1]);
-        System.out.println(result[0]);
+        // System.out.println(result[1]);
+        // System.out.println(result[0]);
+        System.out.println(result[1] + "," + result[0]);
+
     }
 
 }
