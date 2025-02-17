@@ -1,21 +1,25 @@
+import java.util.HashMap;
+
 public class fifthPractcie {
-  public static int longestSubarray(int[] nums, int k) {
-    int maxLength = 0;
-    int n = nums.length;
+  public static int longestSubarray(int[] arr, int k) {
+    HashMap<Integer, Integer> mp = new HashMap<>();
+    int maxLength = 0, prefSum = 0;
+    int n = arr.length;
     for (int i = 0; i < n; i++) {
-      int  sum = 0;
-      for (int j = i; j < n; j++) {
-        sum += nums[j];
-        if (sum == k) {
-          maxLength = Math.max(maxLength, (j - i) + 1);
-        }
+      prefSum += arr[i];
+      if (mp.containsKey(prefSum - k)) {
+        maxLength = Math.max(maxLength, (prefSum - k) - i);
+      } else {
+        mp.put(prefSum, i);
       }
     }
+
     return maxLength;
   }
+
   public static void main(String[] args) {
-    int[] a = { 94, -33, -13, 40, -82, 94, -33, -13, 40, -82
-    };
-    System.out.println(longestSubarray(a, 52));
+    int[] a = { 10, -10, 20, 30 };
+    // System.out.println(longestSubarray(a,));
+    System.out.println(longestSubarray(a, 5));
   }
 }
