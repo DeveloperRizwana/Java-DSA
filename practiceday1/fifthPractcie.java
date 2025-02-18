@@ -1,25 +1,34 @@
-import java.util.HashMap;
-
 public class fifthPractcie {
-  public static int longestSubarray(int[] arr, int k) {
-    HashMap<Integer, Integer> mp = new HashMap<>();
-    int maxLength = 0, prefSum = 0;
-    int n = arr.length;
-    for (int i = 0; i < n; i++) {
-      prefSum += arr[i];
-      if (mp.containsKey(prefSum - k)) {
-        maxLength = Math.max(maxLength, (prefSum - k) - i);
-      } else {
-        mp.put(prefSum, i);
+  public static void sortColors(int[] nums) {
+    int n = nums.length;
+    int zeroes = 0, twos = n - 1, i = 0;
+    while (i <= twos) {
+      if (nums[i] == 0) {
+        swap(nums, zeroes, i);
+        zeroes++;
+        i++;
+      } else if (nums[i] == 1) {
+        i++;
+      } else if (nums[i] == 2) {
+        swap(nums, i, twos);
+        twos--;
       }
+
     }
 
-    return maxLength;
+  }
+
+  public static void swap(int[] a, int i, int j) {
+    int temp = a[i];
+    a[i] = a[j];
+    a[j] = temp;
   }
 
   public static void main(String[] args) {
-    int[] a = { 10, -10, 20, 30 };
-    // System.out.println(longestSubarray(a,));
-    System.out.println(longestSubarray(a, 5));
+    int[] a = { 1, 2, 0 };
+    sortColors(a);
+    for (int i = 0; i < a.length; i++) {
+      System.err.print(a[i] + " ");
+    }
   }
 }
