@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "findMajorityElement",
+      "request": "launch",
+      "mainClass": "findMajorityElement",
+      "projectName": "Array_2738eee7"
+    },
+    {
+      "type": "java",
       "name": "longestSubarray",
       "request": "launch",
       "mainClass": "longestSubarray",
