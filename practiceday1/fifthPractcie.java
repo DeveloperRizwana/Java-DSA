@@ -1,34 +1,15 @@
 public class fifthPractcie {
-  public static void sortColors(int[] nums) {
-    int n = nums.length;
-    int zeroes = 0, twos = n - 1, i = 0;
-    while (i <= twos) {
-      if (nums[i] == 0) {
-        swap(nums, zeroes, i);
-        zeroes++;
-        i++;
-      } else if (nums[i] == 1) {
-        i++;
-      } else if (nums[i] == 2) {
-        swap(nums, i, twos);
-        twos--;
-      }
-
+  public static int maxSubArray(int[] nums) {
+    int n = nums.length, maxSum = nums[0], sum = nums[0];
+    for (int i = 1; i < n; i++) {
+      sum = Math.max(nums[i], sum + nums[i]);
+      maxSum = Math.max(maxSum, sum);
     }
-
-  }
-
-  public static void swap(int[] a, int i, int j) {
-    int temp = a[i];
-    a[i] = a[j];
-    a[j] = temp;
+    return maxSum;
   }
 
   public static void main(String[] args) {
-    int[] a = { 1, 2, 0 };
-    sortColors(a);
-    for (int i = 0; i < a.length; i++) {
-      System.err.print(a[i] + " ");
-    }
+    int[] a = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+    System.out.println(maxSubArray(a));
   }
 }
