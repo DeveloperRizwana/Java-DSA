@@ -1,15 +1,15 @@
 public class fifthPractcie {
-  public static int maxSubArray(int[] nums) {
-    int n = nums.length, maxSum = nums[0], sum = nums[0];
+  public static int pairWithMaxSum(int arr[]) {
+    int max = Integer.MIN_VALUE;
+    int n = arr.length;
     for (int i = 1; i < n; i++) {
-      sum = Math.max(nums[i], sum + nums[i]);
-      maxSum = Math.max(maxSum, sum);
+      max = Math.max(max, arr[i - 1] + arr[i]);
     }
-    return maxSum;
+    return max;
   }
 
   public static void main(String[] args) {
-    int[] a = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-    System.out.println(maxSubArray(a));
+    int[] a = { 5, 4, 3, 1, 6 };
+    System.out.println(pairWithMaxSum(a));
   }
 }
