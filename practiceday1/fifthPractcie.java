@@ -1,15 +1,19 @@
 public class fifthPractcie {
-  public static int pairWithMaxSum(int arr[]) {
-    int max = Integer.MIN_VALUE;
-    int n = arr.length;
-    for (int i = 1; i < n; i++) {
-      max = Math.max(max, arr[i - 1] + arr[i]);
+  public static int maxProfit(int[] prices) {
+    int profit = 0, buy = Integer.MAX_VALUE;
+    int n = prices.length;
+    for (int i = 0; i < n - 1; i++) {
+      if (prices[i] < buy) {
+        buy = prices[i];
+      }
+      profit = Math.max(profit, prices[i + 1] - buy);
     }
-    return max;
+    return profit;
+
   }
 
   public static void main(String[] args) {
-    int[] a = { 5, 4, 3, 1, 6 };
-    System.out.println(pairWithMaxSum(a));
+    int[] a = { 7, 6, 4, 3, 1 };
+    System.out.println(maxProfit(a));
   }
 }
