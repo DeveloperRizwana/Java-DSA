@@ -20,6 +20,6 @@ public class fifthPractcie {
   public static void main(String[] args) {
     int[] a = { 3, 1, -2, -5, 2, -4 };
     int[] result = rearrangeArray(a);
-    System.out.println(Arrays.toString(result));
+    System.out.println("Arranged Array is : " + Arrays.toString(result));
   }
 }
