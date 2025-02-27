@@ -11,6 +11,7 @@ public class fifthPractcie {
     }
     if (idx == -1) {
       reverse(nums, 0, n - 1);
+      return;
     }
     for (int i = n - 1; i > idx; i--) {
       if (nums[i] > nums[idx]) {
@@ -23,7 +24,7 @@ public class fifthPractcie {
   }
 
   public static void reverse(int[] a, int i, int j) {
-    while (i > j) {
+    while (i < j) {
       swap(a, i, j);
       i++;
       j--;
@@ -37,7 +38,7 @@ public class fifthPractcie {
   }
 
   public static void main(String[] args) {
-    int[] a = { 3, 2, 1 };
+    int[] a = { 1,2,3,4,5 };
     nextPermutation(a);
     // for(int i = 0; i < a.length; i++){
     // System.out.print(a[i] + " ");
