@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "longestConsecutive",
+      "request": "launch",
+      "mainClass": "longestConsecutive",
+      "projectName": "Array_2738eee7"
+    },
+    {
+      "type": "java",
       "name": "findMajorityElement",
       "request": "launch",
       "mainClass": "findMajorityElement",
