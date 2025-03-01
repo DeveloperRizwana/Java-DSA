@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 public class waveprint {
     static void printMatrix(int[][] mat){
         for(int i = 0; i < mat.length; i++){
@@ -43,7 +43,7 @@ public class waveprint {
                 mat[i][j] = sc.nextInt();
             }
         }
-        System.out.println("wave print of matrix: ");
+        System.out.println("Wave print of matrix: ");
         makeWavePrint(mat);
     }
     
