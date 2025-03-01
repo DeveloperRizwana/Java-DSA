@@ -1,5 +1,3 @@
-
-
 public class colNoFixed {
     public static void main(String[] args) {
         int[][] arr = {

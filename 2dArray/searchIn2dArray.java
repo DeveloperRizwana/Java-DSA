@@ -1,5 +1,3 @@
-// package Array;
-
 import java.util.*;
 
 public class searchIn2dArray {

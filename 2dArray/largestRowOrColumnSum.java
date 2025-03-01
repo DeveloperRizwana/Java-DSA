@@ -49,37 +49,37 @@ public class largestRowOrColumnSum {
             return;
         }
         int column = matrix[0].length;
-        int largerow = 0;
-        int largecolumn = 0;
-        int rownumber = 0;
-        int columnnumber = 0;
+        int largeRow = 0;
+        int largeColumn = 0;
+        int rowNumber = 0;
+        int columnNumber = 0;
 
 
         for (int i = 0; i < row; i++) {
-            int rowsum = 0;
+            int rowSum = 0;
             for (int j = 0; j < column; j++) {
-                rowsum += matrix[i][j];
+                rowSum += matrix[i][j];
             }
-            if (largerow < rowsum) {
-                largerow = rowsum;
-                rownumber = i;
+            if (largeRow < rowSum) {
+                largeRow = rowSum;
+                rowNumber = i;
             }
         }
 
         for (int j = 0; j < column; j++) {
-            int columnsum = 0;
+            int columnSum = 0;
             for (int i = 0; i < row; i++) {
-                columnsum += matrix[i][j];
+                columnSum += matrix[i][j];
             }
-            if (largecolumn < columnsum) {
-                largecolumn = columnsum;
-                columnnumber = j;
+            if (largeColumn < columnSum) {
+                largeColumn = columnSum;
+                columnNumber = j;
             }
         }
-        if (largecolumn > largerow) {
-            System.out.println("column " + columnnumber + " " + largecolumn);
+        if (largeColumn > largeRow) {
+            System.out.println("column " + columnNumber + " " + largeColumn);
         } else {
-            System.out.println("row " + rownumber + " " + largerow);
+            System.out.println("row " + rowNumber + " " + largeRow);
         }
 	
     }
