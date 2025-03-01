@@ -1,4 +1,4 @@
-package Array;
+// package Array;
 
 import java.util.*;
 
@@ -10,7 +10,7 @@ public class searchIn2dArray {
                 { 18, 12, 13, 4, 6 },
                 { 78, 98, 9, 15, 6 }
         };
-        int target = 15;
+        int target = 20;
         int[] ans = search(arr, target);
         System.out.println(Arrays.toString(ans));
     }
