@@ -23,23 +23,29 @@ public class rowWiseSum {
         System.out.println();
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter rows and columns of matrix: ");
-        int r = sc.nextInt();
-        int c = sc.nextInt();
-        int[][] arr = new int[r][c];
-        int totalElements = r * c;
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter rows and columns of matrix: ");
+        // int r = sc.nextInt();
+        // int c = sc.nextInt();
+        // int[][] arr = new int[r][c];
+        // int totalElements = r * c;
 
-        System.out.println("Enter " + totalElements + " values: ");
-        for(int i = 0; i < r; i++){
-            for(int j = 0; j < c; j++){
-                arr[i][j] = sc.nextInt();
-            }
-        }
+        // System.out.println("Enter " + totalElements + " values: ");
+        // for(int i = 0; i < r; i++){
+        //     for(int j = 0; j < c; j++){
+        //         arr[i][j] = sc.nextInt();
+        //     }
+        // }
+
+        int[][] matrix = {
+            {1,2,3},
+            {4,5,6,},
+            {7,8,9},
+        };
         System.out.println("Original matrix: ");
-        printMatrix(arr);
+        printMatrix(matrix);
         System.out.println("Row wise sum: ");
-        findRowWiseSum(arr);
+        findRowWiseSum(matrix);
        
     }
 }

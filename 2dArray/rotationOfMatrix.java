@@ -20,6 +20,7 @@ public class rotationOfMatrix {
             }
         }
     }
+
     static void reverse(int[] arr) {
         int l = 0, r = arr.length - 1;
 
@@ -31,6 +32,7 @@ public class rotationOfMatrix {
             r--;
         }
     }
+
     static void rotate(int[][] matrix, int n) {
         findInplaceTranspose(matrix, n, n);
         for (int i = 0; i < n; i++) {
@@ -40,23 +42,29 @@ public class rotationOfMatrix {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter rows and columns of matrix");
-        int r = sc.nextInt();
-        int c = sc.nextInt();
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter rows and columns of matrix");
+        // int r = sc.nextInt();
+        // int c = sc.nextInt();
 
-        int[][] matrix = new int[r][c];
-        int totalElements = r * c;
-        System.out.println("Enter " + totalElements + " values");
-        for (int i = 0; i < r; i++) {
-            for (int j = 0; j < c; j++) {
-                matrix[i][j] = sc.nextInt();
-            }
-        }
+        // int[][] matrix = new int[r][c];
+        // int totalElements = r * c;
+        // System.out.println("Enter " + totalElements + " values");
+        // for (int i = 0; i < r; i++) {
+        //     for (int j = 0; j < c; j++) {
+        //         matrix[i][j] = sc.nextInt();
+        //     }
+        // }
+        int[][] matrix = {
+            {1,2,3},
+            {4,5,6,},
+            {7,8,9},
+        };
         System.out.println("Input matrix");
         printMatrix(matrix);
 
-        rotate(matrix, r);
+        rotate(matrix, 3);
+
         System.out.println("rotation of array");
         printMatrix(matrix);
 

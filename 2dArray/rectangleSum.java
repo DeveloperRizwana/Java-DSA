@@ -33,7 +33,7 @@ public class rectangleSum {
         int l2 = sc.nextInt();
         int r2 = sc.nextInt();
 
-        System.out.println("Rectangle aum " + findRectangleSum(matrix, l1, r1, l2, r2));
+        System.out.println("Rectangle sum " + findRectangleSum(matrix, l1, r1, l2, r2));
 
     }
 }

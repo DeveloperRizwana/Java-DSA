@@ -25,9 +25,10 @@ public class pascaltriangle {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("enter n");
-        int n = sc.nextInt();
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("enter n");
+        // int n = sc.nextInt();
+        int n = 6;
         System.out.println("Pascal's triangle");
         int[][] ans = pascal(n);
         printPascal(ans);

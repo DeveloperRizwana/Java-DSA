@@ -30,19 +30,25 @@ public class waveprint {
         }    
     }
     public static void main(String[] args) {
-        System.out.println("Enter rows and columns of Matrix: ");
-        Scanner sc = new Scanner(System.in);
-        int r = sc.nextInt();
-        int c = sc.nextInt();
-        int[][] mat = new int[r][c];
-        int totalElements = r * c;
+        // System.out.println("Enter rows and columns of Matrix: ");
+        // Scanner sc = new Scanner(System.in);
+        // int r = sc.nextInt();
+        // int c = sc.nextInt();
+        // int[][] mat = new int[r][c];
+        // int totalElements = r * c;
 
-        System.out.println("Enter " + totalElements + " values: ");
-        for(int i = 0; i < r; i++){
-            for(int j = 0; j < c; j++){
-                mat[i][j] = sc.nextInt();
-            }
-        }
+        // System.out.println("Enter " + totalElements + " values: ");
+        // for(int i = 0; i < r; i++){
+        //     for(int j = 0; j < c; j++){
+        //         mat[i][j] = sc.nextInt();
+        //     }
+        // }
+
+        int[][] mat = {
+            {1,2,3},
+            {4,5,6,},
+            {7,8,9},
+        };
         System.out.println("Wave print of matrix: ");
         makeWavePrint(mat);
     }
