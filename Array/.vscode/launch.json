@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "subarraySumK",
+      "request": "launch",
+      "mainClass": "subarraySumK",
+      "projectName": "Array_2738eee7"
+    },
+    {
+      "type": "java",
       "name": "longestConsecutive",
       "request": "launch",
       "mainClass": "longestConsecutive",
