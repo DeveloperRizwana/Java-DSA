@@ -9,32 +9,18 @@ public class multiplication {
         }
     }
 
-    // public static void mul(int[][] a, int[][] b, int r1, int c1, int r2, int c2)
-    // {
-    // int[][] result = new int[r1][c2];
-    // for (int i = 0; i < r1; i++) {
-    // for (int j = 0; j < c2; j++) {
-    // for (int k = 0; k < c1; k++) {
-    // result[i][j] += (a[i][k] * b[k][j]);
-    // }
-    // }
-    // }
-    // printMatrix(result);
-    // }
-
-    public static void multiply(int A[][], int B[][], int C[][], int N) {
-        // add code here.
-        int r1 = A.length, c1 = A[0].length;
-        int r2 = B.length, c2 = B[0].length;
-        if(r2 != c1) return;
+    public static void mul(int[][] a, int[][] b, int r1, int c1, int r2, int c2) {
+        if (r2 != c1)
+            return;
+        int[][] result = new int[r1][c2];
         for (int i = 0; i < r1; i++) {
             for (int j = 0; j < c2; j++) {
                 for (int k = 0; k < c1; k++) {
-                    C[i][j] += (A[i][k] * B[k][j]);
+                    result[i][j] += (a[i][k] * b[k][j]);
                 }
             }
         }
-
+        printMatrix(result);
     }
 
     public static void main(String[] args) {
@@ -55,7 +41,6 @@ public class multiplication {
         printMatrix(b);
 
         System.out.println("multiplication of matrix1 and matrix2 ");
-        // mul(a, b, 2, 3, 3, 2);
-        multiply(a, b, b, 2);
+        mul(a, b, 2, 3, 3, 2);
     }
 }
