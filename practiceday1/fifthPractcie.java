@@ -29,8 +29,6 @@ public class fifthPractcie {
         { 4, 5, 6 },
         { 7, 8, 9 },
     };
-    // int[][] result = transpose(a);
-    // System.out.println(Arrays.toString(result));
     System.out.println("Input MAtrix");
     printMatrix(a);
 
