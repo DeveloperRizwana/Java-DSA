@@ -34,7 +34,7 @@ public class fifthPractcie {
 
     int[][]result = transpose(a);
 
-    System.out.println("Output MAtrix");
+    System.out.println("Output MAtrix: ");
     printMatrix(result);
   }
 }
