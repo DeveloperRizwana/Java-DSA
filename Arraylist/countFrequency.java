@@ -15,11 +15,10 @@ public class countFrequency {
             result.add(count);
         }
         return result;
-        // do modify in the given array
     }
 
     public static void main(String[] args) {
         int[] arr = { 3, 3, 3, 3 };
-        System.out.println(frequencyCount(arr));
+        System.out.println("Count of the frequncy of all numbers from 1 to N : " + frequencyCount(arr));
     }
 }
