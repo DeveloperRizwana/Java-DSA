@@ -40,6 +40,7 @@ public class fifthPractcie {
       }
 
       // leftCol -> bottomRow to topRow
+      
       if (leftCol <= rightCol) { // Only if still within bounds
         for (int i = bottomRow; i >= topRow; i--) {
           result.add(matrix[i][leftCol]);
