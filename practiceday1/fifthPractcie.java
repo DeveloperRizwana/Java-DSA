@@ -11,59 +11,25 @@ public class fifthPractcie {
     }
   }
 
-  public static List<Integer> spiralOrder(int[][] matrix) {
-
-    ArrayList<Integer> result = new ArrayList<>();
-    int m = matrix.length, n = matrix[0].length;
-    int topRow = 0, bottomRow = m - 1;
-    int rightCol = n - 1, leftCol = 0;
-
-    while (topRow <= bottomRow && leftCol <= rightCol) {
-      // topRow
-      for (int j = leftCol; j <= rightCol; j++) {
-        result.add(matrix[topRow][j]);
-      }
-      topRow++;
-
-      // rightCol-> topRow to bottomRow
-      for (int i = topRow; i <= bottomRow; i++) {
-        result.add(matrix[i][rightCol]);
-      }
-      rightCol--;
-
-      // bottomRow -> rightCol to leftCol
-      if (topRow <= bottomRow) { // Only if still within bounds
-        for (int j = rightCol; j >= leftCol; j--) {
-          result.add(matrix[bottomRow][j]);
-        }
-        bottomRow--;
-      }
-
-      // leftCol -> bottomRow to topRow
-      
-      if (leftCol <= rightCol) { // Only if still within bounds
-        for (int i = bottomRow; i >= topRow; i--) {
-          result.add(matrix[i][leftCol]);
-
-        }
-        leftCol++;
+  public static int search(int[] nums, int target) {
+    int n = nums.length;
+    int st = 0, end = n - 1;
+    while (st <= end) {
+      int mid = st + (end - st) / 2;
+      if (target == nums[mid]) {
+        return mid;
+      } else if (target > nums[mid]) {
+        st = mid + 1;
+      } else {
+        end = mid - 1;
       }
     }
-    return result;
-
+    return -1;
   }
 
   public static void main(String[] args) {
-    int[][] a = {
-        { 1, 2, 3, 4 },
-        { 5, 6, 7, 8 },
-        { 9, 10, 11, 12 },
-    };
-    System.out.println("Input MAtrix:");
-    printMatrix(a);
-
-    // int[][]result = transpose(a);
-    List<Integer> result = spiralOrder(a);
-    System.out.println("Output MAtrix: " + result);
+    int[] a = { -1,0,3,5,9,12 };
+    int result = search(a, 2);
+    System.out.println("Result : " + result);
   }
 }
