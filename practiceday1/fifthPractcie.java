@@ -21,6 +21,7 @@ public class fifthPractcie {
       } else if (target > nums[mid]) {
         st = mid + 1;
       } else {
+      
         end = mid - 1;
       }
       
