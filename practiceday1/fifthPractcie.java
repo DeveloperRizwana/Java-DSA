@@ -8,20 +8,34 @@ public class fifthPractcie {
     }
   }
 
-  public static int removeDuplicates(int[] nums) {
-    int x = 0, n = nums.length;
-    for (int i = 0; i < n - 1; i++) {
-      if (nums[i] != nums[i + 1]) {
-        nums[x++] = nums[i];
-      }
-    }
-    nums[x++] = nums[n - 1];
-    return x;
+  public static void rotate(int[] nums, int k) {
+    int n = nums.length;
+    k = k % n;
+    reverse(nums, 0, n - 1);
+    reverse(nums, 0, k - 1);
+    reverse(nums, k, n - 1);
+  }
 
+  public static void reverse(int[] arr, int i, int j) {
+    while (i < j) {
+      swap(arr, i, j);
+      i++;
+      j--;
+    }
+  }
+
+  public static void swap(int[] arr, int st, int end) {
+    int temp = arr[st];
+    arr[st] = arr[end];
+    arr[end] = temp;
   }
 
   public static void main(String[] args) {
-    int[] a = { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
-    System.out.println(removeDuplicates(a));
+    int[] a = { -1,-100,3,99 };
+    // reverse(a, 0, a.length - 1);
+    rotate(a, 2);
+    for (int i = 0; i < a.length; i++) {
+      System.out.print(a[i] + " ");
+    }
   }
 }
