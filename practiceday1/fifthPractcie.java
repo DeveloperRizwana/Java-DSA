@@ -8,20 +8,15 @@ public class fifthPractcie {
     }
   }
 
-  public static void rotate(int[] nums, int k) {
-    int n = nums.length;
-    k = k % n;
-    reverse(nums, 0, n - 1);
-    reverse(nums, 0, k - 1);
-    reverse(nums, k, n - 1);
-  }
-
-  public static void reverse(int[] arr, int i, int j) {
-    while (i < j) {
-      swap(arr, i, j);
-      i++;
-      j--;
+  public static void moveZeroes(int[] nums) {
+    int n = nums.length, x = 0;
+    for (int i = 0; i < n; i++) {
+      if (nums[i] != 0) {
+        swap(nums, i, x);
+        x++;
+      }
     }
+
   }
 
   public static void swap(int[] arr, int st, int end) {
@@ -31,9 +26,8 @@ public class fifthPractcie {
   }
 
   public static void main(String[] args) {
-    int[] a = { -1,-100,3,99 };
-    // reverse(a, 0, a.length - 1);
-    rotate(a, 2);
+    int[] a = { 1,0,1 };
+    moveZeroes(a);
     for (int i = 0; i < a.length; i++) {
       System.out.print(a[i] + " ");
     }
