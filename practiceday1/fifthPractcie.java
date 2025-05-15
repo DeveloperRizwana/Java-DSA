@@ -8,21 +8,14 @@ public class fifthPractcie {
     }
   }
 
-  public static int secondLargestElement(int[] nums) {
-    int max = Integer.MIN_VALUE, secondMax = -1, n = nums.length;
-    for (int i = 0; i < n; i++) {
-      if (nums[i] > max) {
-        max = nums[i];
+  public static int linearSearch(int nums[], int target) {
+    // Your code goes here
+    for (int i = 0; i < nums.length; i++) {
+      if (nums[i] == target) {
+        return i;
       }
     }
-    for (int i = 0; i < n; i++) {
-      if (nums[i] == max) {
-        nums[i] = -1;
-      } else if (nums[i] > secondMax) {
-        secondMax = nums[i];
-      } 
-    }
-    return secondMax;
+    return -1;
   }
 
   public static void swap(int[] arr, int st, int end) {
@@ -32,8 +25,8 @@ public class fifthPractcie {
   }
 
   public static void main(String[] args) {
-    int[] a = { 10,10,10,10};
-    System.out.println(secondLargestElement(a));
+    int[] a = { 2, 3, 4, 5, 3 };
+    System.out.println(linearSearch(a, 3));
     // for (int i = 0; i < a.length; i++) {
     // System.out.print(a[i] + " ");
     // }
