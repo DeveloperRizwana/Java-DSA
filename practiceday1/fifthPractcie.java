@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class fifthPractcie {
   static void printMatrix(int[][] matrix) {
     for (int i = 0; i < matrix.length; i++) {
@@ -8,14 +10,36 @@ public class fifthPractcie {
     }
   }
 
-  public static int linearSearch(int nums[], int target) {
-    // Your code goes here
-    for (int i = 0; i < nums.length; i++) {
-      if (nums[i] == target) {
-        return i;
+  public static ArrayList<Integer> findUnion(int a[], int b[]) {
+    // add your code here
+    int n = a.length, m = b.length, i = 0, j = 0, k = 0;
+    ArrayList<Integer> result = new ArrayList<>();
+    while (i < n && j < m) {
+      if (a[i] <= b[j]) {
+        if (result.size() == 0 || result.get(result.size() - 1) != a[i]) {
+          result.add(a[i]);
+        }
+        i++;
+      } else {
+        if (result.size() == 0 || result.get(result.size() - 1) != b[j]) {
+          result.add(b[j]);
+        }
+        j++;
       }
     }
-    return -1;
+    while (i < n) {
+        if (result.size() == 0 || result.get(result.size() - 1) != a[i]) {
+          result.add(a[i]);
+        }
+        i++;
+    }
+    while (j < m) {
+        if (result.size() == 0 || result.get(result.size() - 1) != b[j]) {
+          result.add(b[j]);
+        }
+        j++;
+    }
+    return result;
   }
 
   public static void swap(int[] arr, int st, int end) {
@@ -25,8 +49,10 @@ public class fifthPractcie {
   }
 
   public static void main(String[] args) {
-    int[] a = { 2, 3, 4, 5, 3 };
-    System.out.println(linearSearch(a, 3));
+    int[] a = { 1, 2, 3, 4, 5 };
+    int[] b = { 1, 2, 3, 6, 7 };
+    ArrayList<Integer> result = findUnion(a, b);
+    System.out.println(result);
     // for (int i = 0; i < a.length; i++) {
     // System.out.print(a[i] + " ");
     // }
