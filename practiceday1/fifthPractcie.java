@@ -10,36 +10,15 @@ public class fifthPractcie {
     }
   }
 
-  public static ArrayList<Integer> findUnion(int a[], int b[]) {
-    // add your code here
-    int n = a.length, m = b.length, i = 0, j = 0, k = 0;
-    ArrayList<Integer> result = new ArrayList<>();
-    while (i < n && j < m) {
-      if (a[i] <= b[j]) {
-        if (result.size() == 0 || result.get(result.size() - 1) != a[i]) {
-          result.add(a[i]);
-        }
-        i++;
-      } else {
-        if (result.size() == 0 || result.get(result.size() - 1) != b[j]) {
-          result.add(b[j]);
-        }
-        j++;
+  public static int missingNumber(int[] nums) {
+    int n = nums.length, k = 1;
+    for (int i = 0; i < n; i++) {
+      if (nums[i] == k) {
+        k++;
+        i = -1;
       }
     }
-    while (i < n) {
-        if (result.size() == 0 || result.get(result.size() - 1) != a[i]) {
-          result.add(a[i]);
-        }
-        i++;
-    }
-    while (j < m) {
-        if (result.size() == 0 || result.get(result.size() - 1) != b[j]) {
-          result.add(b[j]);
-        }
-        j++;
-    }
-    return result;
+    return k;
   }
 
   public static void swap(int[] arr, int st, int end) {
@@ -49,12 +28,7 @@ public class fifthPractcie {
   }
 
   public static void main(String[] args) {
-    int[] a = { 1, 2, 3, 4, 5 };
-    int[] b = { 1, 2, 3, 6, 7 };
-    ArrayList<Integer> result = findUnion(a, b);
-    System.out.println(result);
-    // for (int i = 0; i < a.length; i++) {
-    // System.out.print(a[i] + " ");
-    // }
+    int[] a = { 3, 0, 1 };
+    System.out.println(missingNumber(a));
   }
 }
