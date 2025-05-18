@@ -10,15 +10,18 @@ public class fifthPractcie {
     }
   }
 
-  public static int missingNumber(int[] nums) {
-    int n = nums.length, k = 1;
+  public static int findMaxConsecutiveOnes(int[] nums) {
+    int n = nums.length, max = 0, maxOne = 0;
     for (int i = 0; i < n; i++) {
-      if (nums[i] == k) {
-        k++;
-        i = -1;
+      if (nums[i] == 1) {
+        max++;
+        maxOne = Math.max(maxOne, max);
+      } else {
+        max = 0;
       }
     }
-    return k;
+    return maxOne;
+
   }
 
   public static void swap(int[] arr, int st, int end) {
@@ -28,7 +31,7 @@ public class fifthPractcie {
   }
 
   public static void main(String[] args) {
-    int[] a = { 3, 0, 1 };
-    System.out.println(missingNumber(a));
+    int[] a = { 1 };
+    System.out.println(findMaxConsecutiveOnes(a));
   }
 }
