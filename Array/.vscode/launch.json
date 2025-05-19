@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "arrayList",
+      "request": "launch",
+      "mainClass": "arrayList",
+      "projectName": "Array_2738eee7"
+    },
+    {
+      "type": "java",
+      "name": "array1",
+      "request": "launch",
+      "mainClass": "array1",
+      "projectName": "Array_2738eee7"
+    },
+    {
+      "type": "java",
       "name": "subarraySumK",
       "request": "launch",
       "mainClass": "subarraySumK",
