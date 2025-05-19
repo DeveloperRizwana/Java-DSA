@@ -12,23 +12,11 @@ public class fifthPractcie {
 
   public static int singleNumber(int[] nums) {
     int n = nums.length;
+    int result = 0;
     for (int i = 0; i < n; i++) {
-      for (int j = i + 1; j < n; j++) {
-        if (nums[i] == nums[j]) {
-          nums[i] = 0;
-          nums[j] = 0;
-        }
-      }
-      if (nums[i] != 0) {
-        return nums[i];
-      }
+      result ^= nums[i];
     }
-    // for (int i = 0; i < n; i++) {
-    // if (nums[i] != 0) {
-    // return nums[i];
-    // }
-    // }
-    return 0;
+    return result;
   }
 
   public static void swap(int[] arr, int st, int end) {
@@ -38,7 +26,7 @@ public class fifthPractcie {
   }
 
   public static void main(String[] args) {
-    int[] a = { 1, 0, 1 };
+    int[] a = { 1, 2, 3, 3, 1 };
     System.out.println(singleNumber(a));
   }
 }
