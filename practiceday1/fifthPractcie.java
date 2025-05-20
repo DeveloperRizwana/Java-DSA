@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.HashMap;
 
 public class fifthPractcie {
   static void printMatrix(int[][] matrix) {
@@ -10,13 +10,22 @@ public class fifthPractcie {
     }
   }
 
-  public static int singleNumber(int[] nums) {
-    int n = nums.length;
-    int result = 0;
+  public static int longestSubarray(int[] arr, int k) {
+    // code here
+    HashMap<Integer, Integer> mp = new HashMap<>();
+    int n = arr.length, prefSum = 0, maxLength = 0;
     for (int i = 0; i < n; i++) {
-      result ^= nums[i];
+      prefSum += arr[i];
+      if (prefSum == k) {
+        maxLength = i + 1;
+      }
+      if (mp.containsKey(prefSum - k)) {
+        maxLength = Math.max(maxLength, (i - mp.get(prefSum - k)));
+      }
+      mp.putIfAbsent(prefSum, i);
     }
-    return result;
+    return maxLength;
+
   }
 
   public static void swap(int[] arr, int st, int end) {
@@ -26,7 +35,7 @@ public class fifthPractcie {
   }
 
   public static void main(String[] args) {
-    int[] a = { 1, 2, 3, 3, 1 };
-    System.out.println(singleNumber(a));
+    int[] a = { 10, -10, 20, 30 };
+    System.out.println(longestSubarray(a, 5));
   }
 }
