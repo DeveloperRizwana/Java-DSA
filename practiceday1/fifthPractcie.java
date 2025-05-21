@@ -10,22 +10,16 @@ public class fifthPractcie {
     }
   }
 
-  public static int longestSubarray(int[] arr, int k) {
-    // code here
-    HashMap<Integer, Integer> mp = new HashMap<>();
-    int n = arr.length, prefSum = 0, maxLength = 0;
+  public static int[] twoSum(int[] nums, int target) {
+    int n = nums.length;
     for (int i = 0; i < n; i++) {
-      prefSum += arr[i];
-      if (prefSum == k) {
-        maxLength = i + 1;
+      for (int j = i + 1; j < n; j++) {
+        if (nums[i] + nums[j] == target) {
+          return new int[] { i, j };
+        }
       }
-      if (mp.containsKey(prefSum - k)) {
-        maxLength = Math.max(maxLength, (i - mp.get(prefSum - k)));
-      }
-      mp.putIfAbsent(prefSum, i);
     }
-    return maxLength;
-
+    return new int[] {};
   }
 
   public static void swap(int[] arr, int st, int end) {
@@ -35,7 +29,9 @@ public class fifthPractcie {
   }
 
   public static void main(String[] args) {
-    int[] a = { 10, -10, 20, 30 };
-    System.out.println(longestSubarray(a, 5));
+    int[] a = { 2, 7, 11, 15 };
+    // System.out.println(longestSubarray(a, 5));
+    int[] result = twoSum(a, 9);
+    System.out.println(result[0] + " " + result[1]);
   }
 }
