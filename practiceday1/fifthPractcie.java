@@ -10,16 +10,22 @@ public class fifthPractcie {
     }
   }
 
-  public static int[] twoSum(int[] nums, int target) {
-    int n = nums.length;
-    for (int i = 0; i < n; i++) {
-      for (int j = i + 1; j < n; j++) {
-        if (nums[i] + nums[j] == target) {
-          return new int[] { i, j };
-        }
+  public static void sortColors(int[] nums) {
+    int n = nums.length, zeroS = 0, twoS = n - 1, i = 0;
+    while (i <= twoS) {
+      if (nums[i] == 0) {
+        swap(nums, i, zeroS);
+        i++;
+        zeroS++;
+      } else if (nums[i] == 1) {
+        i++;
+      } else if (nums[i] == 2) {
+        swap(nums, i, twoS);
+        twoS--;
       }
+
     }
-    return new int[] {};
+
   }
 
   public static void swap(int[] arr, int st, int end) {
@@ -29,9 +35,10 @@ public class fifthPractcie {
   }
 
   public static void main(String[] args) {
-    int[] a = { 2, 7, 11, 15 };
-    // System.out.println(longestSubarray(a, 5));
-    int[] result = twoSum(a, 9);
-    System.out.println(result[0] + " " + result[1]);
+    int[] a = { 2,0,1 };
+    sortColors(a);
+    for (int i = 0; i < a.length; i++) {
+      System.out.print(a[i] + " ");
+    }
   }
 }
