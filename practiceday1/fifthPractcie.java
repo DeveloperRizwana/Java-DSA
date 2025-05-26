@@ -15,6 +15,7 @@ public class fifthPractcie {
     while (i <= twoS) {
       if (nums[i] == 0) {
         swap(nums, i, zeroS);
+        
         i++;
         zeroS++;
       } else if (nums[i] == 1) {
