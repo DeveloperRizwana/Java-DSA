@@ -14,6 +14,7 @@ public class fifthPractcie {
     int n = nums.length, zeroS = 0, twoS = n - 1, i = 0;
     while (i <= twoS) {
       if (nums[i] == 0) {
+        
         swap(nums, i, zeroS);
         
         i++;
